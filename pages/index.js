@@ -9,7 +9,6 @@ class CampaignIndex extends Component {
         const campaigns = await factory.methods.getDeployedCampaigns().call()
         return {campaigns}
     }
-
     renderCampaigns() {
         const items = this.props.campaigns.map((address) => {
             return {
